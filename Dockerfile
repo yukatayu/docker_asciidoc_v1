@@ -12,6 +12,8 @@ RUN apt update -y && \
 	gem install rouge && \
 	apt install -y bison flex libffi-dev libxml2-dev libgdk-pixbuf2.0-dev libcairo2-dev libpango1.0-dev fonts-lyx cmake ruby-dev && \
 	gem install asciidoctor-mathematical && \
+	apt install -y openjdk-11-jre graphviz && \
+	gem install asciidoctor-diagram && \
 	gem install asciidoctor-pdf-cjk-kai_gen_gothic && \
 	asciidoctor-pdf-cjk-kai_gen_gothic-install && \
 	echo "Successfully installed"
